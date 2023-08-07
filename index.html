@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <text class="text1">Pankaj kumar</text>
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#section-2">skills</a></li>
+                    <li><a href="#form">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>web designer</p>
+                <h1>hi, I am <span>Pankaj kumar</span><br> from India</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- about-->
+    <div id="about">
+        <div class="container1">
+            <div class="row-a">
+                <div class="about-col-1">
+                    <img src="pankaj.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi expedita fugit ab. Repellat
+                        quos reiciendis at ipsa ipsam, adipisci vel cupiditate accusamus voluptatem asperiores autem
+                        sint aut, non consequuntur odio.
+                        Unde temporibus at praesentium dignissimos neque enim provident facere. Animi tempore voluptatem
+                        molestias eveniet praesentium ullam mollitia, quis deserunt. Nam, aliquam fugit harum ex totam
+                        deserunt pariatur veritatis repellat minima.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Intrefaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Intrefaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Intrefaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -----------------------skill--------------------         -->
+
+
+    <div class="sora-special-box wow slideInUp" id="section-2" style="visibility: visible; animation-name: slideInUp;">
+        <div class="special-wrap row">
+            <div class="special-title wow fadeInUp" id="skills1" style="visibility: visible; animation-name: fadeInUp;">
+                <h4>SKILLS </h4>
+            </div>
+
+            <div style="clear: both;"></div>
+
+            <div class="skills-s">
+                <!-- skill -->
+                <dl>
+                    <dt>HTML</dt>
+                    <dd class="skill-percent html" data-percent="90" style="overflow: hidden; width: 89.9956%;"></dd>
+                    <dt>CSS</dt>
+                    <dd class="skill-percent css" data-percent="85" style="overflow: hidden; width: 84.9432%;"></dd>
+                    <dt>jQuery</dt>
+                    <dd class="skill-percent jquery" data-percent="70" style="overflow: hidden; width: 70.0288%;"></dd>
+                    <dt>SCSS</dt>
+                    <dd class="skill-percent scss" data-percent="60" style="overflow: hidden; width: 59.9678%;"></dd>
+                    <dt>Javascript</dt>
+                    <dd class="skill-percent javascript" data-percent="50" style="overflow: hidden; width: 49.9069%;">
+                    </dd>
+                    <dt>PHP</dt>
+                    <dd class="skill-percent php" data-percent="60" style="overflow: hidden; width: 59.9678%;"></dd>
+                    <dt>XML</dt>
+                    <dd class="skill-percent xml" data-percent="40" style="overflow: hidden; width: 40.0449%;"></dd>
+                </dl>
+                <!-- #skill -->
+            </div>
+            <div class="pro-png">
+                <img src="pro.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ------------------contect-form----------------------- -->
+
+
+    <section class="form">
+        <div class="container-form">
+            <h2>Contact Me</h2>
+            <form action="process_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tablinks = document.getElementsByClassName("tab-contents")
+    </script>
+<footer>
+    Created by Pankaj | All Right Reseved
+</footer>
+
+</body>
+
+</html>
